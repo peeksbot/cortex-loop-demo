@@ -1,1 +1,2 @@
-matplotlib>=3.5
+# All dependencies (pyspark) are pre-installed on Databricks ML clusters.
+# No extra pip installs needed for this demo.
