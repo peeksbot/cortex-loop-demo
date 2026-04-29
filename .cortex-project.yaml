@@ -1,0 +1,5 @@
+# Cortex project configuration — used by the databricks-experiment-loop skill
+default_entry: src/train.py
+default_cluster_id: 0325-230746-e3qf979u  # peeksbot cluster
+expected_runtime_min: 2
+description: Demo project for testing the Cortex Databricks experiment loop
