@@ -29,7 +29,7 @@ try:
 
     spark = SparkSession.builder.appName("cortex-loop-demo").getOrCreate()
 
-    values = [1, 2, 3]
+    values = list(range(1, 101))
     df = spark.createDataFrame([(v,) for v in values], ["value"])
     mean_val = float(df.agg({"value": "avg"}).collect()[0][0])
     count_val = df.count()
